@@ -3,6 +3,7 @@ from typing import Dict, Iterable, List
 
 import requests
 from bs4 import BeautifulSoup
+from playwright.sync_api import sync_playwright
 
 
 DETAIL_IDS = [
@@ -42,12 +43,26 @@ def scrape_file(html_path: str) -> Dict[str, str]:
 
 
 def scrape_url(url: str, *, session: requests.Session | None = None) -> Dict[str, str]:
-    """Fetch the job page from `url` and extract details."""
+    """Fetch the job page from `url` and extract details using requests."""
     sess = session or requests.Session()
     resp = sess.get(url, timeout=10)
     resp.raise_for_status()
     soup = BeautifulSoup(resp.text, "lxml")
     return _extract_details(soup)
+
+
+def scrape_url_dynamic(url: str) -> Dict[str, str]:
+    """Fetch and render the job page using Playwright and extract details."""
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
+        context = browser.new_context(ignore_https_errors=True)
+        page = context.new_page()
+        page.goto(url, timeout=60000)
+        # Wait for a known element to appear to ensure the page has loaded
+        page.wait_for_selector("#ams-detail-companyname", timeout=15000)
+        soup = BeautifulSoup(page.content(), "lxml")
+        browser.close()
+        return _extract_details(soup)
 
 
 if __name__ == "__main__":
@@ -66,8 +81,13 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     url_list: List[str] = []
-    if Path(args.urls_file).exists():
-        lines = Path(args.urls_file).read_text(encoding="utf-8").splitlines()
+    urls_file = Path(args.urls_file)
+    if not urls_file.exists():
+        alt = Path(__file__).resolve().parents[1] / args.urls_file
+        if alt.exists():
+            urls_file = alt
+    if urls_file.exists():
+        lines = urls_file.read_text(encoding="utf-8").splitlines()
         url_list.extend([l.strip() for l in lines if l.strip()])
     url_list.extend(args.urls)
 
@@ -76,7 +96,7 @@ if __name__ == "__main__":
 
     results = []
     for url in url_list:
-        details = scrape_url(url)
+        details = scrape_url_dynamic(url)
         details["url"] = url
         results.append(details)
 
