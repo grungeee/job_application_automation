@@ -3,7 +3,11 @@ from typing import Dict, Iterable, List
 
 import requests
 from bs4 import BeautifulSoup
-from playwright.sync_api import sync_playwright
+
+try:
+    from playwright.sync_api import sync_playwright
+except ModuleNotFoundError:  # pragma: no cover - optional dependency
+    sync_playwright = None
 
 
 DETAIL_IDS = [
@@ -53,6 +57,12 @@ def scrape_url(url: str, *, session: requests.Session | None = None) -> Dict[str
 
 def scrape_url_dynamic(url: str) -> Dict[str, str]:
     """Fetch and render the job page using Playwright and extract details."""
+    if sync_playwright is None:
+        raise RuntimeError(
+            "Playwright is required for dynamic scraping. "
+            "Run 'pip install playwright' and 'playwright install chromium'."
+        )
+
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
         context = browser.new_context(ignore_https_errors=True)

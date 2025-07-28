@@ -10,6 +10,8 @@ Add job links to `urls.txt` (one URL per line) or pass them on the command line.
 # install dependencies and browser
 pip install -r scraper-project/requirements.txt
 playwright install chromium
+# on Linux you may also need system packages
+playwright install-deps chromium
 
 # scrape URLs listed in urls.txt
 python scraper-project/src/portal_scraper.py
