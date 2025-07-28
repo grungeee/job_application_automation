@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="de" prefix="og: https://ogp.me/ns#" data-critters-container="" data-darkreader-mode="dynamic" data-darkreader-scheme="dark"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style type="text/css" id="fa-auto-css">:root, :host {
+  --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
+  --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Free";
+  --fa-font-light: normal 300 1em/1 "Font Awesome 6 Pro";
+  --fa-font-thin: normal 100 1em/1 "Font Awesome 6 Pro";
+  --fa-font-duotone: normal 900 1em/1 "Font Awesome 6 Duotone";
+  --fa-font-duotone-regular: normal 400 1em/1 "Font Awesome 6 Duotone";
+  --fa-font-duotone-light: normal 300 1em/1 "Font Awesome 6 Duotone";
+  --fa-font-duotone-thin: normal 100 1em/1 "Font Awesome 6 Duotone";
+  --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+  --fa-font-sharp-solid: normal 900 1em/1 "Font Awesome 6 Sharp";
+  --fa-font-sharp-regular: normal 400 1em/1 "Font Awesome 6 Sharp";
+  --fa-font-sharp-light: normal 300 1em/1 "Font Awesome 6 Sharp";
+  --fa-font-sharp-thin: normal 100 1em/1 "Font Awesome 6 Sharp";
+  --fa-font-sharp-duotone-solid: normal 900 1em/1 "Font Awesome 6 Sharp Duotone";
+  --fa-font-sharp-duotone-regular: normal 400 1em/1 "Font Awesome 6 Sharp Duotone";
+  --fa-font-sharp-duotone-light: normal 300 1em/1 "Font Awesome 6 Sharp Duotone";
+  --fa-font-sharp-duotone-thin: normal 100 1em/1 "Font Awesome 6 Sharp Duotone";
+}
+
+svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
+  overflow: visible;
+  box-sizing: content-box;
+}
+
+.svg-inline--fa {
+  display: var(--fa-display, inline-block);
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+.svg-inline--fa.fa-2xs {
+  vertical-align: 0.1em;
+}
+.svg-inline--fa.fa-xs {
+  vertical-align: 0em;
+}
+.svg-inline--fa.fa-sm {
+  vertical-align: -0.0714285705em;
+}
+.svg-inline--fa.fa-lg {
+  vertical-align: -0.2em;
+}
+.svg-inline--fa.fa-xl {
+  vertical-align: -0.25em;
+}
+.svg-inline--fa.fa-2xl {
+  vertical-align: -0.3125em;
+}
+.svg-inline--fa.fa-pull-left {
+  margin-right: var(--fa-pull-margin, 0.3em);
+  width: auto;
+}
+.svg-inline--fa.fa-pull-right {
+  margin-left: var(--fa-pull-margin, 0.3em);
+  width: auto;
+}
+.svg-inline--fa.fa-li {
+  width: var(--fa-li-width, 2em);
+  top: 0.25em;
+}
+.svg-inline--fa.fa-fw {
+  width: var(--fa-fw-width, 1.25em);
+}
+
+.fa-layers svg.svg-inline--fa {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.fa-layers-counter, .fa-layers-text {
+  display: inline-block;
+  position: absolute;
+  text-align: center; }
+
+.fa-layers {
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  text-align: center;
+  vertical-align: -0.125em;
+  width: 1em;
+}
+.fa-layers svg.svg-inline--fa {
+  transform-origin: center center;
+}
+
+.fa-layers-text {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: center center;
+}
+
+.fa-layers-counter {
+  background-color: var(--fa-counter-background-color, #ff253a);
+  border-radius: var(--fa-counter-border-radius, 1em);
+  box-sizing: border-box;
+  color: var(--fa-inverse, #fff);
+  line-height: var(--fa-counter-line-height, 1);
+  max-width: var(--fa-counter-max-width, 5em);
+  min-width: var(--fa-counter-min-width, 1.5em);
+  overflow: hidden;
+  padding: var(--fa-counter-padding, 0.25em 0.5em);
+  right: var(--fa-right, 0);
+  text-overflow: ellipsis;
+  top: var(--fa-top, 0);
+  transform: scale(var(--fa-counter-scale, 0.25));
+  transform-origin: top right;
+}
+
+.fa-layers-bottom-right {
+  bottom: var(--fa-bottom, 0);
+  right: var(--fa-right, 0);
+  top: auto;
+  transform: scale(var(--fa-layers-scale, 0.25));
+  transform-origin: bottom right;
+}
+
+.fa-layers-bottom-left {
+  bottom: var(--fa-bottom, 0);
+  left: var(--fa-left, 0);
+  right: auto;
+  top: auto;
+  transform: scale(var(--fa-layers-scale, 0.25));
+  transform-origin: bottom left;
+}
+
+.fa-layers-top-right {
+  top: var(--fa-top, 0);
+  right: var(--fa-right, 0);
+  transform: scale(var(--fa-layers-scale, 0.25));
+  transform-origin: top right;
+}
+
+.fa-layers-top-left {
+  left: var(--fa-left, 0);
+  right: auto;
+  top: var(--fa-top, 0);
+  transform: scale(var(--fa-layers-scale, 0.25));
+  transform-origin: top left;
+}
+
+.fa-1x {
+  font-size: 1em;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-4x {
+  font-size: 4em;
+}
+
+.fa-5x {
+  font-size: 5em;
+}
+
+.fa-6x {
+  font-size: 6em;
+}
+
+.fa-7x {
+  font-size: 7em;
+}
+
+.fa-8x {
+  font-size: 8em;
+}
+
+.fa-9x {
+  font-size: 9em;
+}
+
+.fa-10x {
+  font-size: 10em;
+}
+
+.fa-2xs {
+  font-size: 0.625em;
+  line-height: 0.1em;
+  vertical-align: 0.225em;
+}
+
+.fa-xs {
+  font-size: 0.75em;
+  line-height: 0.0833333337em;
+  vertical-align: 0.125em;
+}
+
+.fa-sm {
+  font-size: 0.875em;
+  line-height: 0.0714285718em;
+  vertical-align: 0.0535714295em;
+}
+
+.fa-lg {
+  font-size: 1.25em;
+  line-height: 0.05em;
+  vertical-align: -0.075em;
+}
+
+.fa-xl {
+  font-size: 1.5em;
+  line-height: 0.0416666682em;
+  vertical-align: -0.125em;
+}
+
+.fa-2xl {
+  font-size: 2em;
+  line-height: 0.03125em;
+  vertical-align: -0.1875em;
+}
+
+.fa-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.fa-ul {
+  list-style-type: none;
+  margin-left: var(--fa-li-margin, 2.5em);
+  padding-left: 0;
+}
+.fa-ul > li {
+  position: relative;
+}
+
+.fa-li {
+  left: calc(-1 * var(--fa-li-width, 2em));
+  position: absolute;
+  text-align: center;
+  width: var(--fa-li-width, 2em);
+  line-height: inherit;
+}
+
+.fa-border {
+  border-color: var(--fa-border-color, #eee);
+  border-radius: var(--fa-border-radius, 0.1em);
+  border-style: var(--fa-border-style, solid);
+  border-width: var(--fa-border-width, 0.08em);
+  padding: var(--fa-border-padding, 0.2em 0.25em 0.15em);
+}
+
+.fa-pull-left {
+  float: left;
+  margin-right: var(--fa-pull-margin, 0.3em);
+}
+
+.fa-pull-right {
+  float: right;
+  margin-left: var(--fa-pull-margin, 0.3em);
+}
+
+.fa-beat {
+  animation-name: fa-beat;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 1s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, ease-in-out);
+}
+
+.fa-bounce {
+  animation-name: fa-bounce;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 1s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+}
+
+.fa-fade {
+  animation-name: fa-fade;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 1s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+}
+
+.fa-beat-fade {
+  animation-name: fa-beat-fade;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 1s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+}
+
+.fa-flip {
+  animation-name: fa-flip;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 1s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, ease-in-out);
+}
+
+.fa-shake {
+  animation-name: fa-shake;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 1s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, linear);
+}
+
+.fa-spin {
+  animation-name: fa-spin;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 2s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, linear);
+}
+
+.fa-spin-reverse {
+  --fa-animation-direction: reverse;
+}
+
+.fa-pulse,
+.fa-spin-pulse {
+  animation-name: fa-spin;
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 1s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, steps(8));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fa-beat,
+.fa-bounce,
+.fa-fade,
+.fa-beat-fade,
+.fa-flip,
+.fa-pulse,
+.fa-shake,
+.fa-spin,
+.fa-spin-pulse {
+    animation-delay: -1ms;
+    animation-duration: 1ms;
+    animation-iteration-count: 1;
+    transition-delay: 0s;
+    transition-duration: 0s;
+  }
+}
+@keyframes fa-beat {
+  0%, 90% {
+    transform: scale(1);
+  }
+  45% {
+    transform: scale(var(--fa-beat-scale, 1.25));
+  }
+}
+@keyframes fa-bounce {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+  }
+  30% {
+    transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+  }
+  50% {
+    transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+  }
+  57% {
+    transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+  }
+  64% {
+    transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
+}
+@keyframes fa-fade {
+  50% {
+    opacity: var(--fa-fade-opacity, 0.4);
+  }
+}
+@keyframes fa-beat-fade {
+  0%, 100% {
+    opacity: var(--fa-beat-fade-opacity, 0.4);
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(var(--fa-beat-fade-scale, 1.125));
+  }
+}
+@keyframes fa-flip {
+  50% {
+    transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+  }
+}
+@keyframes fa-shake {
+  0% {
+    transform: rotate(-15deg);
+  }
+  4% {
+    transform: rotate(15deg);
+  }
+  8%, 24% {
+    transform: rotate(-18deg);
+  }
+  12%, 28% {
+    transform: rotate(18deg);
+  }
+  16% {
+    transform: rotate(-22deg);
+  }
+  20% {
+    transform: rotate(22deg);
+  }
+  32% {
+    transform: rotate(-12deg);
+  }
+  36% {
+    transform: rotate(12deg);
+  }
+  40%, 100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes fa-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.fa-rotate-90 {
+  transform: rotate(90deg);
+}
+
+.fa-rotate-180 {
+  transform: rotate(180deg);
+}
+
+.fa-rotate-270 {
+  transform: rotate(270deg);
+}
+
+.fa-flip-horizontal {
+  transform: scale(-1, 1);
+}
+
+.fa-flip-vertical {
+  transform: scale(1, -1);
+}
+
+.fa-flip-both,
+.fa-flip-horizontal.fa-flip-vertical {
+  transform: scale(-1, -1);
+}
+
+.fa-rotate-by {
+  transform: rotate(var(--fa-rotate-angle, 0));
+}
+
+.fa-stack {
+  display: inline-block;
+  vertical-align: middle;
+  height: 2em;
+  position: relative;
+  width: 2.5em;
+}
+
+.fa-stack-1x,
+.fa-stack-2x {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: var(--fa-stack-z-index, auto);
+}
+
+.svg-inline--fa.fa-stack-1x {
+  height: 1em;
+  width: 1.25em;
+}
+.svg-inline--fa.fa-stack-2x {
+  height: 2em;
+  width: 2.5em;
+}
+
+.fa-inverse {
+  color: var(--fa-inverse, #fff);
+}
+
+.sr-only,
+.fa-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.sr-only-focusable:not(:focus),
+.fa-sr-only-focusable:not(:focus) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.svg-inline--fa .fa-primary {
+  fill: var(--fa-primary-color, currentColor);
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa .fa-secondary {
+  fill: var(--fa-secondary-color, currentColor);
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-primary {
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-secondary {
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa mask .fa-primary,
+.svg-inline--fa mask .fa-secondary {
+  fill: black;
+}</style><style class="darkreader darkreader--sync" media="screen"></style><style class="darkreader darkreader--fallback" media="screen"></style><style class="darkreader darkreader--user-agent" media="screen">@layer {
+html {
+    background-color: var(--darkreader-background-ffffff, #181a1b) !important;
+}
+html {
+    color-scheme: dark !important;
+}
+iframe {
+    color-scheme: dark !important;
+}
+html, body {
+    background-color: var(--darkreader-background-ffffff, #181a1b);
+}
+html, body {
+    border-color: var(--darkreader-border-4c4c4c, #736b5e);
+    color: var(--darkreader-text-000000, #e8e6e3);
+}
+a {
+    color: var(--darkreader-text-0040ff, #3391ff);
+}
+table {
+    border-color: var(--darkreader-border-808080, #545b5e);
+}
+mark {
+    color: var(--darkreader-text-000000, #e8e6e3);
+}
+::placeholder {
+    color: var(--darkreader-text-a9a9a9, #b2aba1);
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    background-color: var(--darkreader-background-faffbd, #404400) !important;
+    color: var(--darkreader-text-000000, #e8e6e3) !important;
+}
+::selection {
+    background-color: var(--darkreader-background-0060d4, #004daa) !important;
+    color: var(--darkreader-text-ffffff, #e8e6e3) !important;
+}
+::-moz-selection {
+    background-color: var(--darkreader-background-0060d4, #004daa) !important;
+    color: var(--darkreader-text-ffffff, #e8e6e3) !important;
+}
+}</style><style class="darkreader darkreader--text" media="screen"></style><style class="darkreader darkreader--invert" media="screen">.jfk-bubble.gtx-bubble, .captcheck_answer_label > input + img, span#closed_text > img[src^="https://www.gstatic.com/images/branding/googlelogo"], span[data-href^="https://www.hcaptcha.com/"] > #icon, img.Wirisformula, a[data-testid="headerMediumLogo"]>svg, .d2l-navigation-link-image-container, .d2l-iframe-loading-container {
+    filter: invert(100%) hue-rotate(180deg) contrast(90%) !important;
+}</style><style class="darkreader darkreader--inline" media="screen">[data-darkreader-inline-bgcolor] {
+  background-color: var(--darkreader-inline-bgcolor) !important;
+}
+[data-darkreader-inline-bgimage] {
+  background-image: var(--darkreader-inline-bgimage) !important;
+}
+[data-darkreader-inline-border] {
+  border-color: var(--darkreader-inline-border) !important;
+}
+[data-darkreader-inline-border-bottom] {
+  border-bottom-color: var(--darkreader-inline-border-bottom) !important;
+}
+[data-darkreader-inline-border-left] {
+  border-left-color: var(--darkreader-inline-border-left) !important;
+}
+[data-darkreader-inline-border-right] {
+  border-right-color: var(--darkreader-inline-border-right) !important;
+}
+[data-darkreader-inline-border-top] {
+  border-top-color: var(--darkreader-inline-border-top) !important;
+}
+[data-darkreader-inline-boxshadow] {
+  box-shadow: var(--darkreader-inline-boxshadow) !important;
+}
+[data-darkreader-inline-color] {
+  color: var(--darkreader-inline-color) !important;
+}
+[data-darkreader-inline-fill] {
+  fill: var(--darkreader-inline-fill) !important;
+}
+[data-darkreader-inline-stroke] {
+  stroke: var(--darkreader-inline-stroke) !important;
+}
+[data-darkreader-inline-outline] {
+  outline-color: var(--darkreader-inline-outline) !important;
+}
+[data-darkreader-inline-stopcolor] {
+  stop-color: var(--darkreader-inline-stopcolor) !important;
+}
+[data-darkreader-inline-bg] {
+  background: var(--darkreader-inline-bg) !important;
+}
+[data-darkreader-inline-border-short] {
+  border: var(--darkreader-inline-border-short) !important;
+}
+[data-darkreader-inline-border-bottom-short] {
+  border-bottom: var(--darkreader-inline-border-bottom-short) !important;
+}
+[data-darkreader-inline-border-left-short] {
+  border-left: var(--darkreader-inline-border-left-short) !important;
+}
+[data-darkreader-inline-border-right-short] {
+  border-right: var(--darkreader-inline-border-right-short) !important;
+}
+[data-darkreader-inline-border-top-short] {
+  border-top: var(--darkreader-inline-border-top-short) !important;
+}
+[data-darkreader-inline-invert] {
+    filter: invert(100%) hue-rotate(180deg);
+}</style><style class="darkreader darkreader--variables" media="screen">:root {
+   --darkreader-neutral-background: var(--darkreader-background-ffffff, #181a1b);
+   --darkreader-neutral-text: var(--darkreader-text-000000, #e8e6e3);
+   --darkreader-selection-background: var(--darkreader-background-0060d4, #004daa);
+   --darkreader-selection-text: var(--darkreader-text-ffffff, #e8e6e3);
+}</style><style class="darkreader darkreader--root-vars" media="screen"></style>
+  <meta charset="utf-8">
+  <title>MechatronikerIn bei ECO POWERTECH Personalservice GmbH - alle jobs - die Stellensuche des AMS</title>
+  <meta name="description" content="alle jobs - Mit einem Klick alle aktuellen Stellenangebote in ganz Österreich durchsuchen. Job suchen - schnell und einfach. Jetzt ausprobieren!">
+  
+  <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <!-- Twitter Cards Information -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://jobs.ams.at">
+  <meta property="og:title" content="alle jobs - die Stellensuche des AMS">
+  <meta property="og:description" content="alle jobs - Mit einem Klick alle aktuellen Stellenangebote in ganz Österreich durchsuchen. Job suchen - schnell und einfach. Jetzt ausprobieren!">
+  <meta property="og:image" content="https://www.ams.at/content/dam/bilder/AdobeStock_112619059_1280x720.jpg.imgTransformer/parsysImage/desktop/1583489937843/AdobeStock_112619059_1280x720.jpg">
+
+  <!-- base href="https://jobs.ams.at/public/emps/" -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="https://jobs.ams.at/public/emps/assets/favicon.ico">
+<style>@charset "UTF-8";@font-face{font-family:Roboto;src:url(Roboto-Bold.2a63183e6dff7d00.woff2) format("woff2"),url(Roboto-Bold.29ac6158e35aee95.woff) format("woff"),url(Roboto-Bold.88d61d57d557fec8.ttf) format("truetype");font-weight:700;font-style:normal;font-display:fallback}@font-face{font-family:Roboto;src:url(Roboto-Bold.2a63183e6dff7d00.woff2) format("woff2"),url(Roboto-Bold.29ac6158e35aee95.woff) format("woff"),url(Roboto-Bold.88d61d57d557fec8.ttf) format("truetype");font-weight:600;font-style:normal;font-display:fallback}@font-face{font-family:Roboto;src:url(Roboto-Medium.f8693cca22ae31bc.woff2) format("woff2"),url(Roboto-Medium.4fa4b1c02a877115.woff) format("woff"),url(Roboto-Medium.af9d01395a70ca18.ttf) format("truetype");font-weight:500;font-style:normal;font-display:fallback}@font-face{font-family:Roboto;src:url(Roboto-Regular.4e7449338f3a9fee.woff2) format("woff2"),url(Roboto-Regular.4557104648f65fcc.woff) format("woff"),url(Roboto-Regular.ae3a8db9374784f0.ttf) format("truetype");font-weight:400;font-style:normal;font-display:fallback}@font-face{font-family:Roboto;src:url(Roboto-Regular.4e7449338f3a9fee.woff2) format("woff2"),url(Roboto-Regular.4557104648f65fcc.woff) format("woff"),url(Roboto-Regular.ae3a8db9374784f0.ttf) format("truetype");font-weight:400;font-style:normal;font-display:fallback}@font-face{font-family:Roboto;src:url(Roboto-Italic.e89c482bb3c378ae.woff2) format("woff2"),url(Roboto-Italic.16e779734e57c33a.woff) format("woff"),url(Roboto-Italic.991def81f8f1faa6.ttf) format("truetype");font-weight:400;font-style:italic;font-display:fallback}:root{--fa-primary-opacity:1;--fa-secondary-opacity:1;--fa-fw-width:1.25em}:root{--ams-breakpoint-xs:0;--ams-breakpoint-sm:320px;--ams-breakpoint-md:641px;--ams-breakpoint-lg:769px;--ams-breakpoint-xl:1025px}:root{--ams-blue-rgb:0, 93, 180;--ams-gray-rgb:119, 142, 172;--ams-green-rgb:81, 163, 81;--ams-red-rgb:225, 0, 49;--ams-yellow-rgb:255, 193, 7;--ams-info-blue-rgb:24, 138, 245;--ams-purple-rgb:111, 66, 193;--ams-white-rgb:255, 255, 255;--ams-black-rgb:0, 0, 0;--ams-light-rgb:230, 239, 248;--ams-dark-rgb:0, 19, 36;--ams-badge-100-rgb:81, 163, 81;--ams-badge-99-80-rgb:116, 181, 116;--ams-badge-79-60-rgb:185, 218, 185;--ams-badge-59-40-rgb:255, 218, 106;--ams-badge-40-rgb:237, 102, 131;--ams-badge-warning-bg-rgb:255, 243, 205;--ams-badge-warning-icon-rgb:102, 77, 3;--ams-badge-warning-text-rgb:102, 77, 3;--ams-badge-danger-bg-rgb:249, 204, 214;--ams-badge-danger-icon-rgb:135, 0, 29;--ams-badge-danger-text-rgb:135, 0, 29;--ams-badge-general-bg-rgb:0, 74, 144;--ams-badge-general-icon-rgb:255, 255, 255;--ams-badge-general-text-rgb:255, 255, 255;--ams-badge-draft-bg-rgb:209, 232, 253;--ams-badge-draft-icon-rgb:14, 83, 147;--ams-badge-draft-text-rgb:14, 83, 147;--ams-badge-disabled-bg-rgb:228, 232, 238;--ams-badge-disabled-icon-rgb:71, 85, 103;--ams-badge-disabled-text-rgb:71, 85, 103;--ams-badge-done-bg-rgb:220, 237, 220;--ams-badge-done-icon-rgb:49, 98, 49;--ams-badge-done-text-rgb:49, 98, 49;--ams-badge-inactive-bg-rgb:226, 217, 243;--ams-badge-inactive-icon-rgb:67, 40, 116;--ams-badge-inactive-text-rgb:67, 40, 116;--ams-tabbar-border-default-rgb:230, 239, 248;--ams-tabbar-border-hover-rgb:219, 233, 248;--ams-tabbar-border-active-rgb:204, 222, 241;--ams-border-dark-rgb:173, 187, 205;--ams-border-medium-rgb:201, 210, 222;--ams-border-light-rgb:228, 232, 238;--ams-border-selected-rgb:0, 93, 180;--ams-icon-category-rgb:0, 0, 0;--ams-label-rgb:0, 0, 0;--ams-icon-remove-rgb:0, 0, 0;--ams-surface-rgb:228, 232, 238;--ams-surface-readonly-rgb:255, 255, 255;--ams-inactive-fill-rgb:201, 210, 222;--ams-inactive-border-rgb:95, 114, 138;--ams-inactive-hover-rgb:95, 114, 138;--ams-active-fill-rgb:81, 163, 81;--ams-active-border-rgb:81, 163, 81;--ams-active-hover-rgb:49, 98, 49;--ams-active-hover-border-rgb:49, 98, 49;--ams-required-active-rgb:255, 193, 7;--ams-required-active-hover-rgb:204, 154, 6;--ams-active-rgb:0, 93, 180;--ams-hover-rgb:0, 74, 144;--ams-hover-tertiary-background-rgb:204, 223, 240;--ams-pressed-rgb:0, 56, 108;--ams-pressed-tertiary-background-rgb:204, 223, 240;--ams-disabled-rgb:228, 232, 238;--ams-icon-inverted-rgb:255, 255, 255;--ams-icon-disabled-rgb:95, 114, 138;--ams-switch-readonly-rgb:153, 190, 225;--ams-controls-error-rgb:180, 0, 39;--ams-icon-readonly-rgb:0, 0, 0;--ams-border-active-rgb:95, 114, 138;--ams-border-hover-rgb:71, 85, 103;--ams-border-focused-rgb:48, 57, 69;--ams-border-disabled-rgb:201, 210, 222;--ams-border-error-rgb:180, 0, 39;--ams-Label-rgb:95, 114, 138;--ams-Value-rgb:0, 0, 0;--ams-modus-bg-rgb:255, 193, 7;--ams-modus-icon-rgb:102, 77, 3;--ams-error-rgb:180, 0, 39;--ams-error-text-light-rgb:180, 0, 39;--ams-error-text-dark-rgb:90, 0, 20;--ams-error-icon-light-rgb:180, 0, 39;--ams-error-icon-dark-rgb:90, 0, 20;--ams-error-background-rgb:249, 204, 214;--ams-error-border-rgb:243, 153, 173;--ams-warning-rgb:255, 193, 7;--ams-warning-text-dark-rgb:102, 77, 3;--ams-warning-icon-light-rgb:204, 154, 6;--ams-warning-icon-dark-rgb:102, 77, 3;--ams-warning-background-rgb:255, 243, 205;--ams-warning-border-rgb:255, 230, 156;--ams-success-rgb:65, 130, 65;--ams-success-text-light-rgb:65, 130, 65;--ams-success-text-dark-rgb:32, 65, 32;--ams-success-icon-light-rgb:65, 130, 65;--ams-success-icon-dark-rgb:32, 65, 32;--ams-success-background-rgb:220, 237, 220;--ams-success-border-rgb:185, 218, 185;--ams-info-rgb:19, 110, 196;--ams-info-text-light-rgb:19, 110, 196;--ams-info-text-dark-rgb:10, 55, 98;--ams-info-icon-light-rgb:19, 110, 196;--ams-info-icon-dark-rgb:10, 55, 98;--ams-info-background-rgb:209, 232, 253;--ams-info-border-rgb:163, 208, 251;--ams-navbar-active-rgb:0, 74, 144;--ams-navbar-hover-rgb:0, 56, 108;--ams-navbar-selected-rgb:0, 74, 144;--ams-navbar-divider-rgb:153, 190, 225;--ams-surface-primary-rgb:230, 239, 248;--ams-surface-secondary-rgb:255, 255, 255;--ams-surface-secondary-hover-rgb:244, 249, 253;--ams-surface-secondary-pressed-rgb:219, 233, 248;--ams-surface-tertiary-rgb:204, 223, 240;--ams-surface-disabled-rgb:228, 232, 238;--ams-surface-brand-rgb:0, 74, 144;--ams-text-headings-rgb:0, 0, 0;--ams-text-clickable-rgb:0, 93, 180;--ams-text-primary-rgb:0, 0, 0;--ams-text-secondary-rgb:95, 114, 138;--ams-text-tertiary-rgb:0, 56, 108;--ams-text-inverted-rgb:255, 255, 255;--ams-text-light-rgb:204, 223, 240;--ams-text-disabled-light-rgb:95, 114, 138;--ams-text-disabled-dark-rgb:71, 85, 103;--ams-text-visited-link-rgb:111, 66, 193;--ams-text-visited-link-hover-rgb:89, 53, 154;--ams-text-visited-link-pressed-rgb:67, 40, 116;--ams-placeholder-light-rgb:228, 232, 238;--ams-placeholder-dark-rgb:173, 187, 205}:root{--ams-blue:#005db4;--ams-gray:#778eac;--ams-green:#51a351;--ams-red:#e10031;--ams-yellow:#ffc107;--ams-info-blue:#188af5;--ams-purple:#6f42c1;--ams-white:#ffffff;--ams-black:#000000;--ams-badge-100:#51a351;--ams-badge-99-80:#74b574;--ams-badge-79-60:#b9dab9;--ams-badge-59-40:#ffda6a;--ams-badge-40:#ed6683;--ams-badge-warning-bg:#fff3cd;--ams-badge-warning-icon:#664d03;--ams-badge-warning-text:#664d03;--ams-badge-danger-bg:#f9ccd6;--ams-badge-danger-icon:#87001d;--ams-badge-danger-text:#87001d;--ams-badge-general-bg:#004a90;--ams-badge-general-icon:#ffffff;--ams-badge-general-text:#ffffff;--ams-badge-draft-bg:#d1e8fd;--ams-badge-draft-icon:#0e5393;--ams-badge-draft-text:#0e5393;--ams-badge-disabled-bg:#e4e8ee;--ams-badge-disabled-icon:#475567;--ams-badge-disabled-text:#475567;--ams-badge-done-bg:#dceddc;--ams-badge-done-icon:#316231;--ams-badge-done-text:#316231;--ams-badge-inactive-bg:#e2d9f3;--ams-badge-inactive-icon:#432874;--ams-badge-inactive-text:#432874;--ams-tabbar-border-default:#e6eff8;--ams-tabbar-border-hover:#dbe9f8;--ams-tabbar-border-active:#ccdef1;--ams-border-dark:#adbbcd;--ams-border-medium:#c9d2de;--ams-border-light:#e4e8ee;--ams-border-selected:#005db4;--ams-icon-category:#000000;--ams-label:#000000;--ams-icon-remove:#000000;--ams-surface:#e4e8ee;--ams-surface-readonly:#ffffff;--ams-inactive-fill:#c9d2de;--ams-inactive-border:#5f728a;--ams-inactive-hover:#5f728a;--ams-active-fill:#51a351;--ams-active-border:#51a351;--ams-active-hover:#316231;--ams-active-hover-border:#316231;--ams-required-active:#ffc107;--ams-required-active-hover:#cc9a06;--ams-active:#005db4;--ams-hover:#004a90;--ams-hover-tertiary-background:#ccdff0;--ams-pressed:#00386c;--ams-pressed-tertiary-background:#ccdff0;--ams-disabled:#e4e8ee;--ams-icon-inverted:#ffffff;--ams-icon-disabled:#5f728a;--ams-switch-readonly:#99bee1;--ams-controls-error:#b40027;--ams-icon-readonly:#000000;--ams-border-active:#5f728a;--ams-border-hover:#475567;--ams-border-focused:#303945;--ams-border-disabled:#c9d2de;--ams-border-error:#b40027;--ams-Label:#5f728a;--ams-Value:#000000;--ams-modus-bg:#ffc107;--ams-modus-icon:#664d03;--ams-error:#b40027;--ams-error-text-light:#b40027;--ams-error-text-dark:#5a0014;--ams-error-icon-light:#b40027;--ams-error-icon-dark:#5a0014;--ams-error-background:#f9ccd6;--ams-error-border:#f399ad;--ams-warning-text-dark:#664d03;--ams-warning-icon-light:#cc9a06;--ams-warning-icon-dark:#664d03;--ams-warning-background:#fff3cd;--ams-warning-border:#ffe69c;--ams-success:#418241;--ams-success-text-light:#418241;--ams-success-text-dark:#204120;--ams-success-icon-light:#418241;--ams-success-icon-dark:#204120;--ams-success-background:#dceddc;--ams-success-border:#b9dab9;--ams-info:#136ec4;--ams-info-text-light:#136ec4;--ams-info-text-dark:#0a3762;--ams-info-icon-light:#136ec4;--ams-info-icon-dark:#0a3762;--ams-info-background:#d1e8fd;--ams-info-border:#a3d0fb;--ams-navbar-active:#004a90;--ams-navbar-hover:#00386c;--ams-navbar-selected:#004a90;--ams-navbar-divider:#99bee1;--ams-surface-primary:#e6eff8;--ams-surface-secondary:#ffffff;--ams-surface-secondary-hover:#f4f9fd;--ams-surface-secondary-pressed:#dbe9f8;--ams-surface-tertiary:#ccdff0;--ams-surface-disabled:#e4e8ee;--ams-surface-brand:#004a90;--ams-text-headings:#000000;--ams-text-clickable:#005db4;--ams-text-primary:#000000;--ams-text-secondary:#5f728a;--ams-text-tertiary:#00386c;--ams-text-inverted:#ffffff;--ams-text-light:#ccdff0;--ams-text-disabled-light:#5f728a;--ams-text-disabled-dark:#475567;--ams-text-visited-link:#6f42c1;--ams-text-visited-link-hover:#59359a;--ams-text-visited-link-pressed:#432874;--ams-placeholder-light:#e4e8ee;--ams-placeholder-dark:#adbbcd;--ams-gray-100:#e4e8ee;--ams-gray-200:#c9d2de;--ams-gray-300:#adbbcd;--ams-gray-400:#92a5bd;--ams-gray-500:#778eac;--ams-gray-600:#5f728a;--ams-gray-700:#475567;--ams-gray-800:#303945;--ams-gray-900:#181c22;--ams-primary:#005db4;--ams-secondary:#778eac;--ams-success:#51a351;--ams-info:#188af5;--ams-warning:#ffc107;--ams-danger:#e10031;--ams-light:#e6eff8;--ams-dark:#001324;--ams-primary-rgb:0, 93, 180;--ams-secondary-rgb:119, 142, 172;--ams-success-rgb:81, 163, 81;--ams-info-rgb:24, 138, 245;--ams-warning-rgb:255, 193, 7;--ams-danger-rgb:225, 0, 49;--ams-light-rgb:230, 239, 248;--ams-dark-rgb:0, 19, 36;--ams-white-rgb:255, 255, 255;--ams-black-rgb:0, 0, 0;--ams-body-color-rgb:0, 0, 0;--ams-body-bg-rgb:230, 239, 248;--ams-font-sans-serif:Roboto, Arial, Calibri, Candara, Segoe, Segoe UI, Optima, sans-serif;--ams-font-monospace:SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;--ams-gradient:linear-gradient(180deg, rgba(255, 255, 255, .15), rgba(255, 255, 255, 0));--ams-body-font-family:Roboto, Arial, Calibri, Candara, Segoe, Segoe UI, Optima, sans-serif;--ams-body-font-size:.875rem;--ams-body-font-weight:400;--ams-body-line-height:1.5;--ams-body-color:#000000;--ams-body-bg:#e6eff8;--ams-border-width:1px;--ams-border-style:solid;--ams-border-color:#adbbcd;--ams-border-color-translucent:rgba(0, 0, 0, .175);--ams-border-radius:.375rem;--ams-border-radius-sm:.25rem;--ams-border-radius-lg:.5rem;--ams-border-radius-xl:1rem;--ams-border-radius-2xl:2rem;--ams-border-radius-pill:50rem;--ams-link-color:#005db4;--ams-link-hover-color:#004a90;--ams-code-color:#d63384;--ams-highlight-bg:#ffda6a}*,*:before,*:after{box-sizing:border-box}@media (prefers-reduced-motion: no-preference){:root{scroll-behavior:smooth}}body{margin:0;font-family:var(--ams-body-font-family);font-size:var(--ams-body-font-size);font-weight:var(--ams-body-font-weight);line-height:var(--ams-body-line-height);color:var(--ams-body-color);text-align:var(--ams-body-text-align);background-color:var(--ams-body-bg);-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:rgba(0,0,0,0)}@media print{@page{size:A3}body{background-color:#fff;min-width:1024px!important}}</style><style class="darkreader darkreader--sync" media="screen"></style><link rel="stylesheet" href="MechatronikerIn%20bei%20ECO%20POWERTECH%20Personalservice%20GmbH%20-%20alle%20jobs%20-%20die%20Stellensuche%20des%20AMS_files/styles.180f26c7e192297f.css" media="all" onload="this.media='all'"><style class="darkreader darkreader--sync" media="screen"></style><noscript><link rel="stylesheet" href="styles.180f26c7e192297f.css"></noscript><meta name="darkreader" content="b3105d6b31874e8fbb0d20f587b58ae5"><style class="darkreader darkreader--override" media="screen">.vimvixen-hint {
+    background-color: var(--darkreader-background-ffd76e, #684b00) !important;
+    border-color: var(--darkreader-background-c59d00, #9e7e00) !important;
+    color: var(--darkreader-text-302505, #d7d4cf) !important;
+}
+#vimvixen-console-frame {
+    color-scheme: light !important;
+}
+::placeholder {
+    opacity: 0.5 !important;
+}
+#edge-translate-panel-body,
+.MuiTypography-body1,
+.nfe-quote-text {
+    color: var(--darkreader-neutral-text) !important;
+}
+gr-main-header {
+    background-color: var(--darkreader-background-add8e6, #1b4958) !important;
+}
+.tou-z65h9k,
+.tou-mignzq,
+.tou-1b6i2ox,
+.tou-lnqlqk {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+.tou-75mvi {
+    background-color: var(--darkreader-background-cfecf5, #0f3a47) !important;
+}
+.tou-ta9e87,
+.tou-1w3fhi0,
+.tou-1b8t2us,
+.tou-py7lfi,
+.tou-1lpmd9d,
+.tou-1frrtv8,
+.tou-17ezmgn {
+    background-color: var(--darkreader-background-f5f5f5, #1e2021) !important;
+}
+.tou-uknfeu {
+    background-color: var(--darkreader-background-faedda, #432c09) !important;
+}
+.tou-6i3zyv {
+    background-color: var(--darkreader-background-85c3d8, #245d70) !important;
+}
+div.mermaid-viewer-control-panel .btn {
+    background-color: var(--darkreader-neutral-background);
+    fill: var(--darkreader-neutral-text);
+}
+svg g rect.er {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.er.entityBox {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.er.attributeBoxOdd {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.er.attributeBoxEven {
+    fill: var(--darkreader-selection-background);
+    fill-opacity: 0.8 !important;
+}
+svg rect.er.relationshipLabelBox {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g g.nodes rect,
+svg g g.nodes polygon {
+    fill: var(--darkreader-neutral-background) !important;
+}
+svg g rect.task {
+    fill: var(--darkreader-selection-background) !important;
+}
+svg line.messageLine0,
+svg line.messageLine1 {
+    stroke: var(--darkreader-neutral-text) !important;
+}
+div.mermaid .actor {
+    fill: var(--darkreader-neutral-background) !important;
+}
+mitid-authenticators-code-app > .code-app-container {
+    background-color: white !important;
+    padding-top: 1rem;
+}
+iframe#unpaywall[src$="unpaywall.html"] {
+    color-scheme: light !important;
+}
+select {
+    --darkreader-bg--form-control-background-color: rgba(22, 22, 22, 0) !important;
+}
+select * {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+body#tumblr {
+    --darkreader-bg--secondary-accent: 31, 32, 34 !important;
+    --darkreader-bg--white: 23, 23, 23 !important;
+    --darkreader-text--black: 228, 224, 218 !important;
+}
+:host {
+    --d2l-border-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+    --d2l-button-icon-background-color-hover: var(--darkreader-bg--d2l-color-gypsum) !important;
+    --d2l-color-ferrite: var(--darkreader-neutral-text) !important;
+    --d2l-color-sylvite: var(--darkreader-bg--d2l-color-sylvite) !important;
+    --d2l-dropdown-background-color: var(--darkreader-neutral-background) !important;
+    --d2l-dropdown-border-color: var(--darkreader-border--d2l-color-mica) !important;
+    --d2l-input-backgroud-color: var(--darkreader-neutral-background) !important;
+    --d2l-menu-border-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+    --d2l-tooltip-background-color: var(--darkreader-neutral-background) !important;
+    --d2l-tooltip-border-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+}
+:host([_floating]) .d2l-floating-buttons-container {
+    background-color: var(--darkreader-neutral-background) !important;
+    border-top-color: var(--darkreader-border--d2l-color-mica) !important;
+    opacity: 0.88 !important;
+}
+d2l-card {
+    background: var(--darkreader-neutral-background) !important;
+    border-color: var(--darkreader-border--d2l-color-gypsum) !important;
+}
+d2l-dropdown-content > div,
+d2l-menu-item {
+    background-color: var(--darkreader-neutral-background) !important;
+    border-radius: 10px !important;
+}
+d2l-empty-state-simple {
+    border-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+}
+.d2l-button-filter > ul > li > a.vui-button {
+    border-color: var(--darkreader-border--d2l-color-mica) !important;
+}
+.d2l-label-text:has(.d2l-button-subtle-content):hover,
+.d2l-label-text:has(.d2l-button-subtle-content):focus,
+.d2l-label-text:has(.d2l-button-subtle-content):active {
+    background-color: var(--darkreader-bg--d2l-color-gypsum) !important;
+}
+.d2l-navigation-centerer {
+    color: inherit !important;
+}
+.d2l-tabs-layout {
+    border-color: var(--darkreader-border--d2l-color-gypsum) !important;
+}
+.d2l-input,
+.d2l-calendar-date,
+.d2l-htmleditor-container {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+.d2l-collapsible-panel {
+    border: 1px solid var(--darkreader-border--d2l-color-mica) !important;
+    border-radius: 0.4rem !important;
+}
+.d2l-collapsible-panel-divider {
+    border-bottom: 1px solid var(--darkreader-border--d2l-color-mica) !important;
+}
+.d2l-w2d-flex {
+    border-bottom: 2px solid var(--darkreader-border--d2l-color-mica) !important;
+}
+.d2l-collapsible-panel scrolled,
+.d2l-collapsible-panel-header,
+.d2l-w2d-collection-fixed {
+    background-color: var(--darkreader-neutral-background) !important;
+}
+.d2l-loading-spinner-bg {
+    fill: var(--darkreader-bg--d2l-color-gypsum) !important;
+}
+.d2l-loading-spinner-bg-stroke {
+    stroke: var(--darkreader-border--d2l-color-mica) !important;
+}
+.d2l-loading-spinner-wrapper svg path,
+.d2l-loading-spinner-wrapper svg circle {
+    fill: var(--darkreader-neutral-background) !important;
+}
+embed[type="application/pdf"] { filter: invert(100%) contrast(90%); }</style><style>.sn-title-bar[_ngcontent-ng-c156420311]{min-height:56px}</style><style class="darkreader darkreader--sync" media="screen"></style><style>.footer-wrapper[_ngcontent-ng-c4013470177]{padding:16px;color:#d1f0ff;background-color:#093c7d}.footer-wrapper[_ngcontent-ng-c4013470177]   a[_ngcontent-ng-c4013470177]{color:#d1f0ff;text-decoration:none}.footer-wrapper[_ngcontent-ng-c4013470177]   a[_ngcontent-ng-c4013470177]:hover{color:#d1f0ff;text-decoration:underline}.footer-wrapper[_ngcontent-ng-c4013470177]   a.link-ignore-visited[_ngcontent-ng-c4013470177]:visited{color:#d1f0ff}.footer-wrapper[_ngcontent-ng-c4013470177]   .footer-version[_ngcontent-ng-c4013470177]{margin-top:2rem}@media screen and (max-width: 1200px){.footer-wrapper[_ngcontent-ng-c4013470177]   .container[_ngcontent-ng-c4013470177]{padding:0}}</style><style class="darkreader darkreader--sync" media="screen"></style><style name="nordpass-fonts">@font-face { font-family: Roboto Mono; src: url("moz-extension://d8bdae89-b92e-49e0-8964-185d474d6ea9/css/../assets/RobotoMono-Medium.ttf") format("truetype"); font-style: normal; font-weight: 500; }@font-face { font-family: Roboto Mono; src: url("moz-extension://d8bdae89-b92e-49e0-8964-185d474d6ea9/css/../assets/RobotoMono-Bold.ttf") format("truetype"); font-style: normal; font-weight: 700; }@font-face { font-family: Inter; src: url("moz-extension://d8bdae89-b92e-49e0-8964-185d474d6ea9/css/../assets/Inter-Regular.ttf") format("truetype"); font-style: normal; font-weight: 400; }@font-face { font-family: Inter; src: url("moz-extension://d8bdae89-b92e-49e0-8964-185d474d6ea9/css/../assets/Inter-Medium.ttf") format("truetype"); font-style: normal; font-weight: 500; }@font-face { font-family: Inter; src: url("moz-extension://d8bdae89-b92e-49e0-8964-185d474d6ea9/css/../assets/Inter-SemiBold.ttf") format("truetype"); font-style: normal; font-weight: 600; }@font-face { font-family: Inter; src: url("moz-extension://d8bdae89-b92e-49e0-8964-185d474d6ea9/css/../assets/Inter-Bold.ttf") format("truetype"); font-style: normal; font-weight: 700; }</style><style class="darkreader darkreader--sync" media="screen"></style><style>.breadcrumb[_ngcontent-ng-c1797322489]   .breadcrumb-item[_ngcontent-ng-c1797322489]   a[_ngcontent-ng-c1797322489]{cursor:pointer}</style><style class="darkreader darkreader--sync" media="screen"></style><style>.ams-c-search-detail[_ngcontent-ng-c439320993]   .source-logo[_ngcontent-ng-c439320993]{max-height:1.5em}.ams-c-search-detail[_ngcontent-ng-c439320993]   h3[_ngcontent-ng-c439320993]{font-weight:400}.ams-c-search-detail[_ngcontent-ng-c439320993]   h2[_ngcontent-ng-c439320993], .ams-c-search-detail[_ngcontent-ng-c439320993]   h3[_ngcontent-ng-c439320993]{margin-bottom:.2rem;margin-top:.8rem}.ams-c-search-detail[_ngcontent-ng-c439320993]   h3.subheader[_ngcontent-ng-c439320993], .ams-c-search-detail[_ngcontent-ng-c439320993]   h4.subheader[_ngcontent-ng-c439320993]{font-weight:700;font-size:1rem;margin:0;padding:0;color:#212529}.ams-c-search-detail[_ngcontent-ng-c439320993]   h3[_ngcontent-ng-c439320993] ~ p[_ngcontent-ng-c439320993]{margin:0;padding:0}.ams-c-search-detail[_ngcontent-ng-c439320993]   ul[_ngcontent-ng-c439320993]{margin-top:.3rem;margin-bottom:1.3rem}.ams-c-search-detail[_ngcontent-ng-c439320993]   ul.nested-list[_ngcontent-ng-c439320993]{margin-top:.2rem;margin-bottom:.2rem}@media (max-width: 576px){.ams-c-search-detail[_ngcontent-ng-c439320993]{padding-left:0;padding-right:0}}.ams-c-search-map[_ngcontent-ng-c439320993]{height:30rem;width:100%}.fd-row-override[_ngcontent-ng-c439320993]{flex-direction:row!important}</style><style class="darkreader darkreader--sync" media="screen"></style><meta name="robots" content="noindex, nofollow"><style>.watermark[_ngcontent-ng-c3949804736]:before{content:"Vorschau";position:absolute;top:50%;left:50%;transform:translate(-50%,-50%) rotate(-45deg);color:#5f728a1a;pointer-events:none;-webkit-user-select:none;user-select:none;white-space:nowrap;font-size:240px;font-weight:600;line-height:150%;letter-spacing:10px}</style><style class="darkreader darkreader--sync" media="screen"></style><style>.button-list[_ngcontent-ng-c834483841]{width:100%!important;position:relative;display:block;box-shadow:none}.button-bg-color[_ngcontent-ng-c834483841]{background-color:var(--ams-surface-tertiary)}</style><style class="darkreader darkreader--sync" media="screen"></style></head>
+<body class="ng-tns-0-0">
+<sn-root ng-version="19.2.14"><a class="visually-hidden-focusable" href="https://jobs.ams.at/public/emps/jobs/uuid/a505ff8c-2a1f-384f-9f67-5c77c49a84f5#site-content">Zum Inhalt springen</a><!----><header id="header" role="banner"><lib-title-bar alttext="Logo: AMS alle jobs" link="" logo="assets/shared/images/ams_allejobs.svg" class="title-bar" _nghost-ng-c156420311=""><div _ngcontent-ng-c156420311="" class="bg-white d-flex sn-title-bar" id="ams-title"><div _ngcontent-ng-c156420311="" class="container p-0 d-flex flex-row align-items-center"><a _ngcontent-ng-c156420311="" tabindex="0" class="u-cursor-hand" id="ams-title-link" title="Zurück zur Startseite" href="https://jobs.ams.at/public/emps/"><img _ngcontent-ng-c156420311="" alt="Logo: AMS alle jobs" src="MechatronikerIn%20bei%20ECO%20POWERTECH%20Personalservice%20GmbH%20-%20alle%20jobs%20-%20die%20Stellensuche%20des%20AMS_files/ams_allejobs.svg"><!----><!----></a><!----><div _ngcontent-ng-c156420311="" class="text-darkblue font-weight-normal ms-100 mb-0" id="ams-title-text"><!----></div><!----></div></div></lib-title-bar></header><!----><sn-breadcrumbs class="ps-100 d-flex container ng-star-inserted" _nghost-ng-c1797322489=""><nav _ngcontent-ng-c1797322489="" aria-label="breadcrumb ps-025"><ol _ngcontent-ng-c1797322489="" ams-breadcrumbs="" class="breadcrumb"><!----><li _ngcontent-ng-c1797322489="" ams-breadcrumb-item="" class="breadcrumb-item d-md-flex d-none ng-star-inserted"><a _ngcontent-ng-c1797322489="" tabindex="0" class="link-ignore-visited ng-star-inserted"><fa-icon _ngcontent-ng-c1797322489="" aria-hidden="true" class="ng-fa-icon ng-star-inserted"><svg role="img" aria-hidden="true" focusable="false" data-prefix="far" data-icon="house" class="svg-inline--fa fa-house" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M303.5 5.7c-9-7.6-22.1-7.6-31.1 0l-264 224c-10.1 8.6-11.3 23.7-2.8 33.8s23.7 11.3 33.8 2.8L64 245.5 64 432c0 44.2 35.8 80 80 80l288 0c44.2 0 80-35.8 80-80l0-186.5 24.5 20.8c10.1 8.6 25.3 7.3 33.8-2.8s7.3-25.3-2.8-33.8l-264-224zM112 432l0-227.2L288 55.5 464 204.8 464 432c0 17.7-14.3 32-32 32l-48 0 0-152c0-22.1-17.9-40-40-40l-112 0c-22.1 0-40 17.9-40 40l0 152-48 0c-17.7 0-32-14.3-32-32zm128 32l0-144 96 0 0 144-96 0z" style="--darkreader-inline-fill: currentColor;" data-darkreader-inline-fill=""></path></svg></fa-icon><!----><span _ngcontent-ng-c1797322489="" class="visually-hidden">Job finden</span></a><!----><!----><!----></li><li _ngcontent-ng-c1797322489="" ams-breadcrumb-item="" class="breadcrumb-item ng-star-inserted parent-breadcrumb"><a _ngcontent-ng-c1797322489="" tabindex="0" class="link-ignore-visited ng-star-inserted"><!----><span _ngcontent-ng-c1797322489="">Ergebnisse</span></a><!----><!----><!----></li><li _ngcontent-ng-c1797322489="" ams-breadcrumb-item="" class="active breadcrumb-item d-md-flex d-none ng-star-inserted"><span _ngcontent-ng-c1797322489="" class="ng-star-inserted">Details</span><!----><!----></li><!----></ol><!----></nav></sn-breadcrumbs><!----><main id="main" style="min-height: calc(100vh - 211px)"><sn-overlay><!----></sn-overlay><!----><!----><router-outlet></router-outlet><lib-search-detail-page _nghost-ng-c439320993="" class="ng-star-inserted"><div _ngcontent-ng-c439320993="" class="p-0 container ams-c-search-detail ng-star-inserted"><div _ngcontent-ng-c439320993="" class="container-fluid pt-050 pb-150 p-md-050"><div _ngcontent-ng-c439320993="" class="row"><div _ngcontent-ng-c439320993="" class="p-0 col d-flex flex-column flex-md-row align-items-start gap-3"><div _ngcontent-ng-c439320993="" class="flex-grow-1 d-flex flex-wrap align-items-start"><h1 _ngcontent-ng-c439320993="" class="mb-0 text-text-tertiary pe-md-050"><span _ngcontent-ng-c439320993="" id="ams-detail-details-header"> Details: <span _ngcontent-ng-c439320993="" class="fw-semibold">MechatronikerIn</span></span><span _ngcontent-ng-c439320993="" class="visually-hidden ng-star-inserted" id="ams-detail-details-name"> bei ECO POWERTECH Personalservice GmbH </span><!----></h1><!----></div><div _ngcontent-ng-c439320993="" class="w-100 w-md-auto" style="min-width: 218px;"><button _ngcontent-ng-c439320993="" class="btn btn-secondary w-100 ng-star-inserted"><fa-icon _ngcontent-ng-c439320993="" aria-hidden="true" class="ng-fa-icon"><svg role="img" aria-hidden="true" focusable="false" data-prefix="far" data-icon="chevron-left" class="svg-inline--fa fa-chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M15 239c-9.4 9.4-9.4 24.6 0 33.9L207 465c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9L65.9 256 241 81c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0L15 239z" style="--darkreader-inline-fill: currentColor;" data-darkreader-inline-fill=""></path></svg></fa-icon> Zurück zu den Ergebnissen </button><!----></div></div></div></div><lib-detail-container _ngcontent-ng-c439320993="" _nghost-ng-c3949804736=""><div _ngcontent-ng-c3949804736="" class="card container-fluid bg-white px-100 pb-150 pt-100"><div _ngcontent-ng-c3949804736="" class="row"><div _ngcontent-ng-c3949804736="" class="col-12 c-detail-container"><lib-detail-header _ngcontent-ng-c439320993=""><div class="px-0 container-fluid c-list-item-container"><div class="row"><div class="col-12 mb-050"><lib-list-item-header _ngcontent-ng-c439320993=""><div _ngcontent-ng-c439320993="" class="d-flex flex-row justify-content-between"><div _ngcontent-ng-c439320993=""><h2 _ngcontent-ng-c439320993="" class="mt-0 d-flex" id="ams-detail-overview-item-header">Überblick</h2><!----></div><div _ngcontent-ng-c439320993="" class="flex-row d-flex ams-share-buttons d-print-none align-items-center"><div _ngcontent-ng-c439320993="" class="d-flex flex-row-reverse me-050 ng-star-inserted"><lib-social-buttons-widget _ngcontent-ng-c439320993="" class="d-none d-md-block" _nghost-ng-c834483841=""><div _ngcontent-ng-c834483841="" ams-dropdown="" class="btn-group ng-star-inserted"><button _ngcontent-ng-c834483841="" ams-dropdown-toggle="" ams-icon-button="" class="btn btn-tertiary btn-lg border-white ams-icon-button rounded-circle dropdown-toggle" aria-haspopup="true" aria-expanded="false"><fa-icon aria-hidden="true" class="ng-fa-icon ams-button-icon ng-star-inserted"><svg role="img" aria-hidden="true" focusable="false" data-prefix="far" data-icon="share-nodes" class="svg-inline--fa fa-share-nodes fa-fw" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M448 128c0 53-43 96-96 96c-28.9 0-54.8-12.8-72.4-33l-89.7 44.9c1.4 6.5 2.1 13.2 2.1 20.1s-.7 13.6-2.1 20.1L279.6 321c17.6-20.2 43.5-33 72.4-33c53 0 96 43 96 96s-43 96-96 96s-96-43-96-96c0-6.9 .7-13.6 2.1-20.1L168.4 319c-17.6 20.2-43.5 33-72.4 33c-53 0-96-43-96-96s43-96 96-96c28.9 0 54.8 12.8 72.4 33l89.7-44.9c-1.4-6.5-2.1-13.2-2.1-20.1c0-53 43-96 96-96s96 43 96 96zM96 304a48 48 0 1 0 0-96 48 48 0 1 0 0 96zM400 128a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM352 432a48 48 0 1 0 0-96 48 48 0 1 0 0 96z" style="--darkreader-inline-fill: currentColor;" data-darkreader-inline-fill=""></path></svg></fa-icon><!----></button><!----></div><!----><!----><!----></lib-social-buttons-widget><button _ngcontent-ng-c439320993="" ams-icon-button="" class="btn btn-tertiary btn-lg d-block d-md-none border-0 ams-icon-button rounded-circle"><fa-icon aria-hidden="true" class="ng-fa-icon ams-button-icon ng-star-inserted"><svg role="img" aria-hidden="true" focusable="false" data-prefix="far" data-icon="share-nodes" class="svg-inline--fa fa-share-nodes fa-fw" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M448 128c0 53-43 96-96 96c-28.9 0-54.8-12.8-72.4-33l-89.7 44.9c1.4 6.5 2.1 13.2 2.1 20.1s-.7 13.6-2.1 20.1L279.6 321c17.6-20.2 43.5-33 72.4-33c53 0 96 43 96 96s-43 96-96 96s-96-43-96-96c0-6.9 .7-13.6 2.1-20.1L168.4 319c-17.6 20.2-43.5 33-72.4 33c-53 0-96-43-96-96s43-96 96-96c28.9 0 54.8 12.8 72.4 33l89.7-44.9c-1.4-6.5-2.1-13.2-2.1-20.1c0-53 43-96 96-96s96 43 96 96zM96 304a48 48 0 1 0 0-96 48 48 0 1 0 0 96zM400 128a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM352 432a48 48 0 1 0 0-96 48 48 0 1 0 0 96z" style="--darkreader-inline-fill: currentColor;" data-darkreader-inline-fill=""></path></svg></fa-icon><!----></button></div><!----><button _ngcontent-ng-c439320993="" ams-icon-button="" class="btn btn-tertiary border-0 btn-lg d-md-block ams-icon-button rounded-circle" id="ams-detail-print-btn" title="Stellenangebot drucken" aria-label="Stellenangebot drucken"><fa-icon aria-hidden="true" class="ng-fa-icon ams-button-icon ng-star-inserted"><svg role="img" aria-hidden="true" focusable="false" data-prefix="far" data-icon="print" class="svg-inline--fa fa-print fa-fw" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M112 160l0-96c0-8.8 7.2-16 16-16l229.5 0c4.2 0 8.3 1.7 11.3 4.7l26.5 26.5c3 3 4.7 7.1 4.7 11.3l0 69.5 48 0 0-69.5c0-17-6.7-33.3-18.7-45.3L402.7 18.7C390.7 6.7 374.5 0 357.5 0L128 0C92.7 0 64 28.7 64 64l0 96 48 0zm16 208l256 0 0 96-256 0 0-96zm-16-48c-17.7 0-32 14.3-32 32l-32 0 0-96c0-8.8 7.2-16 16-16l384 0c8.8 0 16 7.2 16 16l0 96-32 0c0-17.7-14.3-32-32-32l-288 0zm320 80l48 0c17.7 0 32-14.3 32-32l0-112c0-35.3-28.7-64-64-64L64 192c-35.3 0-64 28.7-64 64L0 368c0 17.7 14.3 32 32 32l48 0 0 80c0 17.7 14.3 32 32 32l288 0c17.7 0 32-14.3 32-32l0-80z" style="--darkreader-inline-fill: currentColor;" data-darkreader-inline-fill=""></path></svg></fa-icon><!----></button></div></div></lib-list-item-header></div></div><div class="row"><div class="col-12 col-lg-6 pe-0"><lib-list-item-left _ngcontent-ng-c439320993="" class="d-flex flex-column gap-025"><ams-key-value-pair _ngcontent-ng-c439320993="" minwidthrem="9" labelname="Unternehmen:" horizontal="" class="fd-row-override d-flex flex-column flex-md-row" id="ams-detail-companyname" style="min-width: 0rem;"><div data-testid="key-value-pair-label" class="text-text-secondary fs-xs whitespace-nowrap me-md-050" style="min-width: 9rem;"><!----><fa-icon class="ng-fa-icon icon-size-s me-025 ng-star-inserted"><svg role="img" aria-hidden="true" focusable="false" data-prefix="far" data-icon="building" class="svg-inline--fa fa-building fa-fw" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M64 48c-8.8 0-16 7.2-16 16l0 384c0 8.8 7.2 16 16 16l80 0 0-64c0-26.5 21.5-48 48-48s48 21.5 48 48l0 64 80 0c8.8 0 16-7.2 16-16l0-384c0-8.8-7.2-16-16-16L64 48zM0 64C0 28.7 28.7 0 64 0L320 0c35.3 0 64 28.7 64 64l0 384c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 64zm88 40c0-8.8 7.2-16 16-16l48 0c8.8 0 16 7.2 16 16l0 48c0 8.8-7.2 16-16 16l-48 0c-8.8 0-16-7.2-16-16l0-48zM232 88l48 0c8.8 0 16 7.2 16 16l0 48c0 8.8-7.2 16-16 16l-48 0c-8.8 0-16-7.2-16-16l0-48c0-8.8 7.2-16 16-16zM88 232c0-8.8 7.2-16 16-16l48 0c8.8 0 16 7.2 16 16l0 48c0 8.8-7.2 16-16 16l-48 0c-8.8 0-16-7.2-16-16l0-48zm144-16l48 0c8.8 0 16 7.2 16 16l0 48c0 8.8-7.2 16-16 16l-48 0c-8.8 0-16-7.2-16-16l0-48c0-8.8 7.2-16 16-16z" style="--darkreader-inline-fill: currentColor;" data-darkreader-inline-fill=""></path></svg></fa-icon><!----><span>Unternehmen:</span></div><div data-testid="key-value-pair-content" class="fs-xs flex-shrink-1 truncate-text" style="--max-lines: 1;"><span _ngcontent-ng-c439320993="" class="fw-bold" id="ams-detail-companyname-text">ECO POWERTECH Personalservice GmbH</span></div></ams-key-value-pair><ams-key-value-pair _ngcontent-ng-c439320993="" minwidthrem="9" labelname="Arbeitsort:" horizontal="" class="fd-row-override d-flex flex-column flex-md-row ng-star-inserted" id="ams-detail-location" style="min-width: 0rem;"><div data-testid="key-value-pair-label" class="text-text-secondary fs-xs whitespace-nowrap me-md-050" style="min-width: 9rem;"><!----><fa-icon class="ng-fa-icon icon-size-s me-025 ng-star-inserted"><svg role="img" aria-hidden="true" focusable="false" data-prefix="far" data-icon="location-dot" class="svg-inline--fa fa-location-dot fa-fw" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M336 192c0-79.5-64.5-144-144-144S48 112.5 48 192c0 12.4 4.5 31.6 15.3 57.2c10.5 24.8 25.4 52.2 42.5 79.9c28.5 46.2 61.5 90.8 86.2 122.6c24.8-31.8 57.8-76.4 86.2-122.6c17.1-27.7 32-55.1 42.5-79.9C331.5 223.6 336 204.4 336 192zm48 0c0 87.4-117 243-168.3 307.2c-12.3 15.3-35.1 15.3-47.4 0C117 435 0 279.4 0 192C0 86 86 0 192 0S384 86 384 192zm-160 0a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm-112 0a80 80 0 1 1 160 0 80 80 0 1 1 -160 0z" style="--darkreader-inline-fill: currentColor;" data-darkreader-inline-fill=""></path></svg></fa-icon><!----><span>Arbeitsort:</span></div><div data-testid="key-value-pair-content" class="fs-xs flex-shrink-1 truncate-text" style="--max-lines: 1;"> 2500, Baden bei Wien </div></ams-key-value-pair><!----><ams-key-value-pair _ngcontent-ng-c439320993="" minwidthrem="9" labelname="Arbeitszeit:" horizontal="" class="fd-row-override d-flex flex-column flex-md-row" id="ams-detail-workingtime" style="min-width: 0rem;"><div data-testid="key-value-pair-label" class="text-text-secondary fs-xs whitespace-nowrap me-md-050" style="min-width: 9rem;"><!----><fa-icon class="ng-fa-icon icon-size-s me-025 ng-star-inserted"><svg role="img" aria-hidden="true" focusable="false" data-prefix="far" data-icon="suitcase" class="svg-inline--fa fa-suitcase fa-fw" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M176 56l0 40 160 0 0-40c0-4.4-3.6-8-8-8L184 48c-4.4 0-8 3.6-8 8zM128 96l0-40c0-30.9 25.1-56 56-56L328 0c30.9 0 56 25.1 56 56l0 40 64 0c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 480c-35.3 0-64-28.7-64-64L0 160c0-35.3 28.7-64 64-64l64 0zm232 48l-208 0-8 0 0 288 224 0 0-288-8 0zM64 144c-8.8 0-16 7.2-16 16l0 256c0 8.8 7.2 16 16 16l32 0 0-288-32 0zM448 432c8.8 0 16-7.2 16-16l0-256c0-8.8-7.2-16-16-16l-32 0 0 288 32 0z" style="--darkreader-inline-fill: currentColor;" data-darkreader-inline-fill=""></path></svg></fa-icon><!----><span>Arbeitszeit:</span></div><div data-testid="key-value-pair-content" class="fs-xs flex-shrink-1 truncate-text" style="--max-lines: 1;"> Vollzeit </div></ams-key-value-pair><ams-key-value-pair _ngcontent-ng-c439320993="" minwidthrem="9" labelname="Arbeitsbeginn:" horizontal="" class="fd-row-override d-flex flex-column flex-md-row" id="ams-detail-availableFrom" style="min-width: 0rem;"><div data-testid="key-value-pair-label" class="text-text-secondary fs-xs whitespace-nowrap me-md-050" style="min-width: 9rem;"><!----><fa-icon class="ng-fa-icon icon-size-s me-025 ng-star-inserted"><svg role="img" aria-hidden="true" focusable="false" data-prefix="far" data-icon="arrow-right" class="svg-inline--fa fa-arrow-right fa-fw" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M440.6 273.4c4.7-4.5 7.4-10.8 7.4-17.4s-2.7-12.8-7.4-17.4l-176-168c-9.6-9.2-24.8-8.8-33.9 .8s-8.8 24.8 .8 33.9L364.1 232 24 232c-13.3 0-24 10.7-24 24s10.7 24 24 24l340.1 0L231.4 406.6c-9.6 9.2-9.9 24.3-.8 33.9s24.3 9.9 33.9 .8l176-168z" style="--darkreader-inline-fill: currentColor;" data-darkreader-inline-fill=""></path></svg></fa-icon><!----><span>Arbeitsbeginn:</span></div><div data-testid="key-value-pair-content" class="fs-xs flex-shrink-1 truncate-text" style="--max-lines: 1;"> Sofort </div></ams-key-value-pair><ams-key-value-pair _ngcontent-ng-c439320993="" minwidthrem="9" labelname="Dienstverhältnis:" horizontal="" class="fd-row-override d-flex flex-column flex-md-row" id="ams-detail-employmentrelationship" style="min-width: 0rem;"><div data-testid="key-value-pair-label" class="text-text-secondary fs-xs whitespace-nowrap me-md-050" style="min-width: 9rem;"><!----><fa-icon class="ng-fa-icon icon-size-s me-025 ng-star-inserted"><svg role="img" aria-hidden="true" focusable="false" data-prefix="far" data-icon="handshake" class="svg-inline--fa fa-handshake fa-fw" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M272.2 64.6l-51.1 51.1c-15.3 4.2-29.5 11.9-41.5 22.5L153 161.9C142.8 171 129.5 176 115.8 176L96 176l0 128c20.4 .6 39.8 8.9 54.3 23.4l35.6 35.6 7 7c0 0 0 0 0 0L219.9 397c6.2 6.2 16.4 6.2 22.6 0c1.7-1.7 3-3.7 3.7-5.8c2.8-7.7 9.3-13.5 17.3-15.3s16.4 .6 22.2 6.5L296.5 393c11.6 11.6 30.4 11.6 41.9 0c5.4-5.4 8.3-12.3 8.6-19.4c.4-8.8 5.6-16.6 13.6-20.4s17.3-3 24.4 2.1c9.4 6.7 22.5 5.8 30.9-2.6c9.4-9.4 9.4-24.6 0-33.9L340.1 243l-35.8 33c-27.3 25.2-69.2 25.6-97 .9c-31.7-28.2-32.4-77.4-1.6-106.5l70.1-66.2C303.2 78.4 339.4 64 377.1 64c36.1 0 71 13.3 97.9 37.2L505.1 128l38.9 0 40 0 40 0c8.8 0 16 7.2 16 16l0 208c0 17.7-14.3 32-32 32l-32 0c-11.8 0-22.2-6.4-27.7-16l-84.9 0c-3.4 6.7-7.9 13.1-13.5 18.7c-17.1 17.1-40.8 23.8-63 20.1c-3.6 7.3-8.5 14.1-14.6 20.2c-27.3 27.3-70 30-100.4 8.1c-25.1 20.8-62.5 19.5-86-4.1L159 404l-7-7-35.6-35.6c-5.5-5.5-12.7-8.7-20.4-9.3C96 369.7 81.6 384 64 384l-32 0c-17.7 0-32-14.3-32-32L0 144c0-8.8 7.2-16 16-16l40 0 40 0 19.8 0c2 0 3.9-.7 5.3-2l26.5-23.6C175.5 77.7 211.4 64 248.7 64L259 64c4.4 0 8.9 .2 13.2 .6zM544 320l0-144-48 0c-5.9 0-11.6-2.2-15.9-6.1l-36.9-32.8c-18.2-16.2-41.7-25.1-66.1-25.1c-25.4 0-49.8 9.7-68.3 27.1l-70.1 66.2c-10.3 9.8-10.1 26.3 .5 35.7c9.3 8.3 23.4 8.1 32.5-.3l71.9-66.4c9.7-9 24.9-8.4 33.9 1.4s8.4 24.9-1.4 33.9l-.8 .8 74.4 74.4c10 10 16.5 22.3 19.4 35.1l74.8 0zM64 336a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zm528 16a16 16 0 1 0 0-32 16 16 0 1 0 0 32z" style="--darkreader-inline-fill: currentColor;" data-darkreader-inline-fill=""></path></svg></fa-icon><!----><span>Dienstverhältnis:</span></div><div data-testid="key-value-pair-content" class="fs-xs flex-shrink-1 truncate-text" style="--max-lines: 1;"> ArbeiterInnen/Angestellte </div></ams-key-value-pair></lib-list-item-left></div><div class="col-12 mt-050 mt-sm-0 col-lg-6 pe-0"><lib-list-item-center _ngcontent-ng-c439320993="" class="d-flex flex-column gap-025"><ams-key-value-pair _ngcontent-ng-c439320993="" minwidthrem="9" labelname="Quelle:" horizontal="" class="fd-row-override d-flex flex-column flex-md-row" id="ams-detail-source" style="min-width: 0rem;"><div data-testid="key-value-pair-label" class="text-text-secondary fs-xs whitespace-nowrap me-md-050" style="min-width: 9rem;"><!----><fa-icon class="ng-fa-icon icon-size-s me-025 ng-star-inserted"><svg role="img" aria-hidden="true" focusable="false" data-prefix="far" data-icon="download" class="svg-inline--fa fa-download fa-fw" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M280 24c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 270.1-95-95c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9L239 369c9.4 9.4 24.6 9.4 33.9 0L409 233c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-95 95L280 24zM128.8 304L64 304c-35.3 0-64 28.7-64 64l0 80c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-80c0-35.3-28.7-64-64-64l-64.8 0-48 48L448 352c8.8 0 16 7.2 16 16l0 80c0 8.8-7.2 16-16 16L64 464c-8.8 0-16-7.2-16-16l0-80c0-8.8 7.2-16 16-16l112.8 0-48-48zM432 408a24 24 0 1 0 -48 0 24 24 0 1 0 48 0z" style="--darkreader-inline-fill: currentColor;" data-darkreader-inline-fill=""></path></svg></fa-icon><!----><span>Quelle:</span></div><div data-testid="key-value-pair-content" class="fs-xs flex-shrink-1 truncate-text" style="--max-lines: 1;"><img _ngcontent-ng-c439320993="" alt="" class="source-logo me-025 ng-star-inserted" src="MechatronikerIn%20bei%20ECO%20POWERTECH%20Personalservice%20GmbH%20-%20alle%20jobs%20-%20die%20Stellensuche%20des%20AMS_files/jobroom_logo.png" title="eJob-Room des AMS"><!----><span _ngcontent-ng-c439320993="" id="ams-detail-source-text">eJob-Room des AMS</span></div></ams-key-value-pair><ams-key-value-pair _ngcontent-ng-c439320993="" minwidthrem="9" labelname="Berufsgruppe:" horizontal="" class="fd-row-override d-flex flex-column flex-md-row" id="ams-detail-occupation" style="min-width: 0rem;"><div data-testid="key-value-pair-label" class="text-text-secondary fs-xs whitespace-nowrap me-md-050" style="min-width: 9rem;"><!----><fa-icon class="ng-fa-icon icon-size-s me-025 ng-star-inserted"><svg role="img" aria-hidden="true" focusable="false" data-prefix="far" data-icon="tags" class="svg-inline--fa fa-tags fa-fw" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M345 39.1c-9.3-9.4-24.5-9.5-33.9-.2s-9.5 24.5-.2 33.9L438.6 202.1c33.9 34.3 33.9 89.4 0 123.7L326.7 439.1c-9.3 9.4-9.2 24.6 .2 33.9s24.6 9.2 33.9-.2L472.8 359.6c52.4-53 52.4-138.2 0-191.2L345 39.1zM242.7 50.7c-12-12-28.3-18.7-45.3-18.7L48 32C21.5 32 0 53.5 0 80L0 229.5c0 17 6.7 33.3 18.7 45.3l168 168c25 25 65.5 25 90.5 0L410.7 309.3c25-25 25-65.5 0-90.5l-168-168zM48 80l149.5 0c4.2 0 8.3 1.7 11.3 4.7l168 168c6.2 6.2 6.2 16.4 0 22.6L243.3 408.8c-6.2 6.2-16.4 6.2-22.6 0l-168-168c-3-3-4.7-7.1-4.7-11.3L48 80zm96 64a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z" style="--darkreader-inline-fill: currentColor;" data-darkreader-inline-fill=""></path></svg></fa-icon><!----><span>Berufsgruppe:</span></div><div data-testid="key-value-pair-content" class="fs-xs flex-shrink-1 truncate-text" style="--max-lines: 1;"> MechatronikerIn </div></ams-key-value-pair><ams-key-value-pair _ngcontent-ng-c439320993="" minwidthrem="9" labelname="Ausbildung:" horizontal="" class="fd-row-override d-flex flex-column flex-md-row" id="ams-detail-education" style="min-width: 0rem;"><div data-testid="key-value-pair-label" class="text-text-secondary fs-xs whitespace-nowrap me-md-050" style="min-width: 9rem;"><!----><fa-icon class="ng-fa-icon icon-size-s me-025 ng-star-inserted"><svg role="img" aria-hidden="true" focusable="false" data-prefix="far" data-icon="graduation-cap" class="svg-inline--fa fa-graduation-cap fa-fw" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M320 80c2.5 0 5 .4 7.4 1.3l218 78.7-218 78.7c-2.4 .9-4.9 1.3-7.4 1.3s-5-.4-7.4-1.3L184.9 192.6l140.8-52.8c8.3-3.1 12.5-12.3 9.4-20.6s-12.3-12.5-20.6-9.4L154.9 169.6c-5.2 2-10.3 4.2-15.3 6.6L94.7 160l218-78.7c2.4-.9 4.9-1.3 7.4-1.3zM15.8 182.6l77.4 27.9c-27.2 28.7-43.7 66.7-45.1 107.7c-.1 .6-.1 1.2-.1 1.8c0 28.4-10.8 57.8-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7c-3.2-14-7.5-28.3-13.4-41.5c1.9-37 19.2-70.9 46.7-94.2l169.5 61.2c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32s-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6zm480.8 80l-46.5 16.8 12.7 120.5c-4.8 3.5-12.8 8-24.6 12.6C410 423.6 368 432 320 432s-90-8.4-118.3-19.4c-11.8-4.6-19.8-9.2-24.6-12.6l12.7-120.5-46.5-16.8L128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6zM467.4 396c0 0-.1 .1-.3 .4c.2-.3 .3-.4 .3-.4zm-294.8 0c0 0 .1 .1 .3 .4c-.2-.3-.3-.4-.3-.4z" style="--darkreader-inline-fill: currentColor;" data-darkreader-inline-fill=""></path></svg></fa-icon><!----><span>Ausbildung:</span></div><div data-testid="key-value-pair-content" class="fs-xs flex-shrink-1 truncate-text" style="--max-lines: 1;"> keine Angabe </div></ams-key-value-pair><ams-key-value-pair _ngcontent-ng-c439320993="" minwidthrem="9" labelname="Inseriert/Aktualisiert:" horizontal="" class="fd-row-override d-flex flex-column flex-md-row" id="ams-detail-lastUpdatedAt" style="min-width: 0rem;"><div data-testid="key-value-pair-label" class="text-text-secondary fs-xs whitespace-nowrap me-md-050" style="min-width: 9rem;"><!----><fa-icon class="ng-fa-icon icon-size-s me-025 ng-star-inserted"><svg role="img" aria-hidden="true" focusable="false" data-prefix="far" data-icon="calendar-days" class="svg-inline--fa fa-calendar-days fa-fw" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40L64 64C28.7 64 0 92.7 0 128l0 16 0 48L0 448c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-256 0-48 0-16c0-35.3-28.7-64-64-64l-40 0 0-40c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40L152 64l0-40zM48 192l80 0 0 56-80 0 0-56zm0 104l80 0 0 64-80 0 0-64zm128 0l96 0 0 64-96 0 0-64zm144 0l80 0 0 64-80 0 0-64zm80-48l-80 0 0-56 80 0 0 56zm0 160l0 40c0 8.8-7.2 16-16 16l-64 0 0-56 80 0zm-128 0l0 56-96 0 0-56 96 0zm-144 0l0 56-64 0c-8.8 0-16-7.2-16-16l0-40 80 0zM272 248l-96 0 0-56 96 0 0 56z" style="--darkreader-inline-fill: currentColor;" data-darkreader-inline-fill=""></path></svg></fa-icon><!----><span>Inseriert/Aktualisiert:</span></div><div data-testid="key-value-pair-content" class="fs-xs flex-shrink-1 truncate-text" style="--max-lines: 1;"> 03.07.2025 </div></ams-key-value-pair><!----></lib-list-item-center></div></div></div></lib-detail-header><hr _ngcontent-ng-c3949804736="" class="mb-100 mt-150"><lib-detail-content _ngcontent-ng-c439320993="" class="u-whitespace-prewrap"><div class="container-fluid px-0"><div _ngcontent-ng-c439320993="" class="row"><div _ngcontent-ng-c439320993="" class="col-md-12"><!----><!----><h2 _ngcontent-ng-c439320993="" id="ams-detail-jobdescription-header" class="ng-star-inserted">Stellenbeschreibung</h2><p _ngcontent-ng-c439320993="" class="fs-s ng-star-inserted" id="ams-detail-jobdescription-text">Wir suchen zum ehestmöglichen Eintritt eine:n Techniker:in mit Schwerpunkt Mechatronik
+im Bereich Service/After Sales
+
+Ref.Nr.: 5PLOMWADTS01
+Arbeitsort: Bez. Baden
+Beschäftigungsausmaß: Vollzeit 
+
+Aufgabengebiet:
+
+Direkte Ansprechperson für unsere Kunden
+Annahme und Erfassung von Störungsmeldungen,
+Service/Wartungsanfragen, Anregungen und Beschwerden
+Interne Informationsdrehscheibe im Service und Schnittstelle zu relevanten Fachabteilungen
+Technische Abwicklung sowie Planung und Koordination von Wartungs-, Service- und Reparatureinsätzen weltweit
+
+Anforderungen:
+
+Technische Ausbildung (HTL-Schwerpunkt Maschinenbau, Mechatronik) oder entsprechende Berufserfahrung im Anlagenbau oder einem ähnlichen Umfeld
+Mechanische und elektrotechnische Grundkenntnisse
+Gute EDV-Kenntnisse (ERP-Systeme, MS-Office, Windows)
+Erfahrung im Customer Service und/oder Kundensupport von Vorteil
+Spaß am telefonischen und schriftlichen Kundenkontakt
+Belastbar, kommunikativ, selbstständig, lösungsorientiert und zuverlässig
+Sehr gute Deutsch- und Englischkenntnisse (weitere Fremdsprachen von Vorteil)
+Genaue und verantwortungsbewusste Arbeitsweise
+Teamfähigkeit
+
+Geboten wird:
+
+Mitarbeit in einem jungen, dynamischen Team
+Eine fundierte Einschulung und berufliche Entwicklungsmöglichkeiten
+Ein kollegiales Betriebsklima und kurze Entscheidungswege
+Ein sicherer Arbeitsplatz in einem erfolgreichen, österreichischen Unternehmen
+Eine Unternehmenskultur, in der langfristige Zusammenarbeit einen hohen Stellenwert hat
+Die Möglichkeit, gemeinsam mit uns Verantwortung zu übernehmen und an Lösungen für eine erneuerbare Energiezukunft zu arbeiten
+Gemeinsame Feste und Veranstaltungen
+Diverse Benefits
+Mindestgehalt € 3.000 Monatsbrutto laut Kollektivvertrag für die metalltechnische Industrie ¿ das tatsächliche marktkonforme Gehalt wird im gemeinsamen Gespräch auf Basis Ihrer Qualifikation und Berufserfahrung festgelegt
+
+Im Sinne des Gleichbehandlungsgesetzes sprechen wir in allen Bereichen und Stellenausschreibungen Damen und Herren gleichermaßen an und stellen fest, dass die Bereitschaft zur kollektivvertraglichen Überzahlung bei entsprechender Qualifikation und Praxiserfahrung besteht.
+
+Wir freuen uns auf Ihre aussagekräftige Bewerbung!
+
+Schicken Sie uns Ihre Bewerbung via E-Mail an: karriere@<a href="http://eco-powertech.com/" target="_blank" rel="noopener noreferrer">eco-powertech.com</a> / Ref.Nr.: 5PLOMWADTS01
+Niederlassung Wienerbergstraße 11/12A | A-1100 Wien</p><!----><h3 _ngcontent-ng-c439320993="" id="ams-detail-education-header" class="ng-star-inserted">Ausbildungen</h3><ul _ngcontent-ng-c439320993="" id="ams-detail-education-list" class="ng-star-inserted"><li _ngcontent-ng-c439320993="" id="ams-detail-education-list-item0" class="ng-star-inserted"><strong _ngcontent-ng-c439320993="">Berufsbildende höhere Schule</strong><span _ngcontent-ng-c439320993="" class="visually-hidden ng-star-inserted">: keine Details angegeben</span><!----><!----></li><!----></ul><!----><!----><!----><!----><!----><!----><h2 _ngcontent-ng-c439320993="" id="ams-detail-generalinfo-header" class="ng-star-inserted">Allgemeine Informationen</h2><div _ngcontent-ng-c439320993="" class="mt-050 ng-star-inserted"><h3 _ngcontent-ng-c439320993="" class="subheader" id="ams-detail-generalequality-header">Angaben des Unternehmens gemäß Gleichbehandlungsgesetz</h3><p _ngcontent-ng-c439320993="" class="fs-s" id="ams-detail-generalequality-text">Das Mindestentgelt für die Stelle als MechatronikerIn beträgt 3.000,00 EUR brutto pro Monat auf Basis Vollzeitbeschäftigung. Bereitschaft zur Überzahlung.</p></div><!----><!----><!----><h3 _ngcontent-ng-c439320993="" id="ams-detail-addresscontact-header" class="ng-star-inserted">Kontakt &amp; Adresse</h3><div _ngcontent-ng-c439320993="" class="row mt-050 ng-star-inserted"><div _ngcontent-ng-c439320993="" class="col-sm-12 col-md-6 c-detail-contact ng-star-inserted"><div _ngcontent-ng-c439320993="" class="fw-bold" id="ams-detail-contact-text">Herr René Olipitz</div><lib-phone-numbers _ngcontent-ng-c439320993=""><div class="sn-c-phone-numbers" id="ams-detail-phone-number-text"><div class="ng-star-inserted"><ams-key-value-pair minwidthrem="9" horizontal="" id="ams-detail-phone-number-textMobil" class="d-flex flex-column flex-md-row" style="min-width: 0rem;"><div data-testid="key-value-pair-label" class="text-text-secondary fs-xs whitespace-nowrap me-md-050" style="min-width: 9rem;"><!----><fa-icon class="ng-fa-icon icon-size-s me-025 ng-star-inserted"><svg role="img" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="mobile-screen-button" class="svg-inline--fa fa-mobile-screen-button fa-fw" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M16 64C16 28.7 44.7 0 80 0L304 0c35.3 0 64 28.7 64 64l0 384c0 35.3-28.7 64-64 64L80 512c-35.3 0-64-28.7-64-64L16 64zM224 448a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM304 64L80 64l0 320 224 0 0-320z" style="--darkreader-inline-fill: currentColor;" data-darkreader-inline-fill=""></path></svg></fa-icon><!----><span>Mobil</span></div><div data-testid="key-value-pair-content" class="fs-xs"> 0660 6698100 </div></ams-key-value-pair></div><div class="ng-star-inserted"><ams-key-value-pair minwidthrem="9" horizontal="" id="ams-detail-phone-number-textFestnetz" class="d-flex flex-column flex-md-row" style="min-width: 0rem;"><div data-testid="key-value-pair-label" class="text-text-secondary fs-xs whitespace-nowrap me-md-050" style="min-width: 9rem;"><!----><fa-icon class="ng-fa-icon icon-size-s me-025 ng-star-inserted"><svg role="img" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="phone-flip" class="svg-inline--fa fa-phone-flip fa-fw" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M347.1 24.6c7.7-18.6 28-28.5 47.4-23.2l88 24C499.9 30.2 512 46 512 64c0 247.4-200.6 448-448 448c-18 0-33.8-12.1-38.6-29.5l-24-88c-5.3-19.4 4.6-39.7 23.2-47.4l96-40c16.3-6.8 35.2-2.1 46.3 11.6L207.3 368c70.4-33.3 127.4-90.3 160.7-160.7L318.7 167c-13.7-11.2-18.4-30-11.6-46.3l40-96z" style="--darkreader-inline-fill: currentColor;" data-darkreader-inline-fill=""></path></svg></fa-icon><!----><span>Festnetz</span></div><div data-testid="key-value-pair-content" class="fs-xs"> 669810 </div></ams-key-value-pair></div><!----></div></lib-phone-numbers><ams-key-value-pair _ngcontent-ng-c439320993="" minwidthrem="9" labelname="E-Mail:" horizontal="" id="ams-detail-email" class="d-flex flex-column flex-md-row ng-star-inserted" style="min-width: 0rem;"><div data-testid="key-value-pair-label" class="text-text-secondary fs-xs whitespace-nowrap me-md-050" style="min-width: 9rem;"><!----><fa-icon class="ng-fa-icon icon-size-s me-025 ng-star-inserted"><svg role="img" aria-hidden="true" focusable="false" data-prefix="far" data-icon="globe" class="svg-inline--fa fa-globe fa-fw" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 464c7.4 0 27-7.2 47.6-48.4c8.8-17.7 16.4-39.2 22-63.6l-139.2 0c5.6 24.4 13.2 45.9 22 63.6C229 456.8 248.6 464 256 464zM178.5 304l155 0c1.6-15.3 2.5-31.4 2.5-48s-.9-32.7-2.5-48l-155 0c-1.6 15.3-2.5 31.4-2.5 48s.9 32.7 2.5 48zm7.9-144l139.2 0c-5.6-24.4-13.2-45.9-22-63.6C283 55.2 263.4 48 256 48s-27 7.2-47.6 48.4c-8.8 17.7-16.4 39.2-22 63.6zm195.3 48c1.5 15.5 2.2 31.6 2.2 48s-.8 32.5-2.2 48l76.7 0c3.6-15.4 5.6-31.5 5.6-48s-1.9-32.6-5.6-48l-76.7 0zm58.8-48c-21.4-41.1-56.1-74.1-98.4-93.4c14.1 25.6 25.3 57.5 32.6 93.4l65.9 0zm-303.3 0c7.3-35.9 18.5-67.7 32.6-93.4c-42.3 19.3-77 52.3-98.4 93.4l65.9 0zM53.6 208c-3.6 15.4-5.6 31.5-5.6 48s1.9 32.6 5.6 48l76.7 0c-1.5-15.5-2.2-31.6-2.2-48s.8-32.5 2.2-48l-76.7 0zM342.1 445.4c42.3-19.3 77-52.3 98.4-93.4l-65.9 0c-7.3 35.9-18.5 67.7-32.6 93.4zm-172.2 0c-14.1-25.6-25.3-57.5-32.6-93.4l-65.9 0c21.4 41.1 56.1 74.1 98.4 93.4zM256 512A256 256 0 1 1 256 0a256 256 0 1 1 0 512z" style="--darkreader-inline-fill: currentColor;" data-darkreader-inline-fill=""></path></svg></fa-icon><!----><span>E-Mail:</span></div><div data-testid="key-value-pair-content" class="fs-xs"><a _ngcontent-ng-c439320993="" class="link-ignore-visited" href="mailto:karriere@eco-powertech.com" id="ams-detail-email-link">karriere@eco-powertech.com</a></div></ams-key-value-pair><!----></div><!----><div _ngcontent-ng-c439320993="" class="col-sm-12 col-md-6 pt-sm-100 pt-md-0 c-detail-company-info ng-star-inserted" id="ams-detail-companylocation"><div _ngcontent-ng-c439320993="" id="ams-detail-location-name" class="ng-star-inserted">ECO POWERTECH Personalservice GmbH</div><!----><div _ngcontent-ng-c439320993="" class="mb-100 ng-star-inserted"><div _ngcontent-ng-c439320993="" id="ams-detail-location-street">Kurandtplatz 1</div><div _ngcontent-ng-c439320993="" id="ams-detail-location-zipcode-townormunicipality-countrycode">9020 Klagenfurt,12.Bez.:St. Martin</div><div _ngcontent-ng-c439320993="" id="ams-detail-location-countrycode" class="ng-star-inserted">Klagenfurt am Wörthersee</div><!----></div><!----><div _ngcontent-ng-c439320993="" class="mt-050 ng-star-inserted"><ams-key-value-pair _ngcontent-ng-c439320993="" minwidthrem="9" labelname="Webseite:" horizontal="" id="ams-detail-website" class="d-flex flex-column flex-md-row" style="min-width: 0rem;"><div data-testid="key-value-pair-label" class="text-text-secondary fs-xs whitespace-nowrap me-md-050" style="min-width: 9rem;"><!----><fa-icon class="ng-fa-icon icon-size-s me-025 ng-star-inserted"><svg role="img" aria-hidden="true" focusable="false" data-prefix="far" data-icon="globe" class="svg-inline--fa fa-globe fa-fw" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 464c7.4 0 27-7.2 47.6-48.4c8.8-17.7 16.4-39.2 22-63.6l-139.2 0c5.6 24.4 13.2 45.9 22 63.6C229 456.8 248.6 464 256 464zM178.5 304l155 0c1.6-15.3 2.5-31.4 2.5-48s-.9-32.7-2.5-48l-155 0c-1.6 15.3-2.5 31.4-2.5 48s.9 32.7 2.5 48zm7.9-144l139.2 0c-5.6-24.4-13.2-45.9-22-63.6C283 55.2 263.4 48 256 48s-27 7.2-47.6 48.4c-8.8 17.7-16.4 39.2-22 63.6zm195.3 48c1.5 15.5 2.2 31.6 2.2 48s-.8 32.5-2.2 48l76.7 0c3.6-15.4 5.6-31.5 5.6-48s-1.9-32.6-5.6-48l-76.7 0zm58.8-48c-21.4-41.1-56.1-74.1-98.4-93.4c14.1 25.6 25.3 57.5 32.6 93.4l65.9 0zm-303.3 0c7.3-35.9 18.5-67.7 32.6-93.4c-42.3 19.3-77 52.3-98.4 93.4l65.9 0zM53.6 208c-3.6 15.4-5.6 31.5-5.6 48s1.9 32.6 5.6 48l76.7 0c-1.5-15.5-2.2-31.6-2.2-48s.8-32.5 2.2-48l-76.7 0zM342.1 445.4c42.3-19.3 77-52.3 98.4-93.4l-65.9 0c-7.3 35.9-18.5 67.7-32.6 93.4zm-172.2 0c-14.1-25.6-25.3-57.5-32.6-93.4l-65.9 0c21.4 41.1 56.1 74.1 98.4 93.4zM256 512A256 256 0 1 1 256 0a256 256 0 1 1 0 512z" style="--darkreader-inline-fill: currentColor;" data-darkreader-inline-fill=""></path></svg></fa-icon><!----><span>Webseite:</span></div><div data-testid="key-value-pair-content" class="fs-xs"><a _ngcontent-ng-c439320993="" libexternallink="OtherLink" target="_blank" class="link-ignore-visited" href="https://www.eco-powertech.com/" id="ams-detail-website-link">www.eco-powertech.com</a></div></ams-key-value-pair></div><!----></div><!----></div><!----><!----><!----><!----></div><!----><button _ngcontent-ng-c439320993="" class="btn btn-secondary d-block d-md-none mt-100"><fa-icon _ngcontent-ng-c439320993="" aria-hidden="true" class="ng-fa-icon me-050"><svg role="img" aria-hidden="true" focusable="false" data-prefix="far" data-icon="chevron-up" class="svg-inline--fa fa-chevron-up" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M239 111c9.4-9.4 24.6-9.4 33.9 0L465 303c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-175-175L81 337c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9L239 111z" style="--darkreader-inline-fill: currentColor;" data-darkreader-inline-fill=""></path></svg></fa-icon> nach Oben </button></div></div></lib-detail-content></div></div></div></lib-detail-container></div><!----></lib-search-detail-page><!----><!----></main><footer id="footer"><lib-footer _nghost-ng-c4013470177=""><div _ngcontent-ng-c4013470177="" class="container-fluid footer-wrapper d-print-none"><div _ngcontent-ng-c4013470177="" class="container"><div _ngcontent-ng-c4013470177="" class="row"><div _ngcontent-ng-c4013470177="" class="d-flex justify-content-start gap-150 flex-wrap lh-sm"><a _ngcontent-ng-c4013470177="" href="https://www.ams.at/arbeitsuchende/arbeitslos-was-tun/jobsuche-online-und-mobil/ams-jobsuche-hilfe" rel="noopener noreferrer" target="_blank" class="link-ignore-visited">Hilfe und FAQs</a><a _ngcontent-ng-c4013470177="" href="https://www.ams.at/organisation/kontaktmoeglichkeiten" rel="noopener noreferrer" target="_blank" class="link-ignore-visited">Kontakt</a><a _ngcontent-ng-c4013470177="" href="https://www.ams.at/" rel="noopener noreferrer" target="_blank" class="link-ignore-visited">AMS-Webseite</a><a _ngcontent-ng-c4013470177="" href="https://www.ams.at/organisation/ueber-ams/impressum" rel="noopener noreferrer" target="_blank" class="link-ignore-visited">Impressum</a><a _ngcontent-ng-c4013470177="" href="https://www.ams.at/organisation/ueber-ams/datenschutzbestimmungen" rel="noopener noreferrer" target="_blank" class="link-ignore-visited">Datenschutz</a><a _ngcontent-ng-c4013470177="" rel="noopener noreferrer" target="_blank" class="link-ignore-visited" href="https://jobs.ams.at/public/emps/privatsphaere-einstellung">Privatsphäre-Einstellungen</a><a _ngcontent-ng-c4013470177="" href="https://www.ams.at/organisation/ueber-ams/barrierefreiheitserklaerung/barrierefreiheitserklaerung_jobsuche" rel="noopener noreferrer" target="_blank" class="link-ignore-visited">Barrierefreiheitserklärung</a></div></div><div _ngcontent-ng-c4013470177="" class="col-12 fs-s footer-version"> © 2025 AMS Österreich | <lib-version-component _ngcontent-ng-c4013470177=""><span id="b91311c5-03db-47f7-87f2-23edb5cd99b9-version">v4.49.0</span></lib-version-component></div><!----></div></div></lib-footer></footer></sn-root>
+<script type="text/javascript" async="" defer="defer" src="MechatronikerIn%20bei%20ECO%20POWERTECH%20Personalservice%20GmbH%20-%20alle%20jobs%20-%20die%20Stellensuche%20des%20AMS_files/matomo.js"></script><script src="MechatronikerIn%20bei%20ECO%20POWERTECH%20Personalservice%20GmbH%20-%20alle%20jobs%20-%20die%20Stellensuche%20des%20AMS_files/runtime.69f0378844403089.js" type="module"></script><script src="MechatronikerIn%20bei%20ECO%20POWERTECH%20Personalservice%20GmbH%20-%20alle%20jobs%20-%20die%20Stellensuche%20des%20AMS_files/polyfills.e2149c552ad8665d.js" type="module"></script><script src="MechatronikerIn%20bei%20ECO%20POWERTECH%20Personalservice%20GmbH%20-%20alle%20jobs%20-%20die%20Stellensuche%20des%20AMS_files/main.d026174d7d1fc373.js" type="module"></script>
+
+<div id="highlighter--hover-tools" style="display: none;">
+    <div id="highlighter--hover-tools--container">
+        <div class="highlighter--icon highlighter--icon-copy" title="Copy"></div>
+        <div class="highlighter--icon highlighter--icon-change-color" title="Change Color"></div>
+        <div class="highlighter--icon highlighter--icon-delete" title="Delete"></div>
+    </div>
+</div></body></html>
